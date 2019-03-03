@@ -24,10 +24,10 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\oddsidemargin}{-0.2in}
+\addtolength{\evensidemargin}{-0.2in}
+\addtolength{\textwidth}{0.5in}
+%\addtolength{\topmargin}{-0in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -45,15 +45,15 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    {#1}{: #2 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\ 
+      {\small#3} & {\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -72,23 +72,69 @@
 
 \begin{document}
 
+\addtolength{\tabcolsep}{4pt}    %spacing between columns
+
+{\renewcommand{\arraystretch}{1} %spacing between rows
+
+\begin{figure}[h]
+	\centering	
+	\begin{minipage}{0.54\textwidth}
+
+		
+		\begin{tabular*}{\textwidth}{ll}			
+			\multicolumn{2}{l}{\textbf{{\Huge Nikolas Rieble}}}	\\	
+			\\			 	
+			 Date of Birth:  & 20.7.1988\\
+			 Place of Birth:  & Freiburg, Germany\\
+			 Nationality:  & German\\
+			 Email : &nikolas-rieble@gmx.de\\%\href{mailto:nikolas-rieble@gmx.de}{nikolas-rieble@gmx.de}\\
+			 Mobile : &+49 1522 612 4617 \\	
+		\end{tabular*}
+	
+	\end{minipage}	
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=0.71\linewidth, right]{IMG_0286-Bearbeitet}
+		\caption*{}
+		\label{fig:prob1_6_1}
+	\end{minipage}	
+\end{figure}
+}
+
+\vspace{-10mm}
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-  \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-\end{tabular*}
+%\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%  \textbf{{\Large Nikolas Rieble}} & email : \href{mailto:nikolas-rieble@gmx.de}{nikolas-rieble@gmx.de}\\
+%   & mobile : +49-1522-612-4617 \\
+%\end{tabular*}
+
 
 
 %-----------EDUCATION-----------------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Master of Science in Computer Science;  GPA: 4.00}{Aug. 2012 -- Dec. 2013}
-    \resumeSubheading
-      {Birla Institute of Technology and Science}{Pilani, India}
-      {Bachelor of Engineering in Electrical and Electronics;  GPA: 3.66 (9.15/10.0)}{Aug. 2008 -- July. 2012}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubheading
+{M.Sc. Computational Engineering Science}{Berlin, Germany}
+{Technical University of Berlin; (current grade 1,7)}{Oct. 2015 -- today}
+\resumeItemListStart
+\resumeItem{Focus of study}
+{Automatization, Machine Learning, Computer Vision}
+\resumeItemListEnd
+\resumeSubheading
+{B.Sc. Psychology}{Vienna, Austria}
+{University of Vienna;  (grade 1,7)}{Oct. 2013 -- Sep. 2015}
+\resumeSubheading
+{B.Sc. Mechanical Engineering}{Stuttgart, Germany}
+{Technical University Stuttgart; (grade 2,9)}{Aug. 2009 -- Mar. 2014}
+\resumeItemListStart
+\resumeItem{Bachelor Thesis}
+{Object Recognition with the Kinect camera using C\#}
+\resumeItemListEnd
+%\resumeSubheading
+%   {Abitur}{Hannover, Germany}
+%   {St. Ursula Schule}{Jun. 2008}
+
+\resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------------
@@ -96,73 +142,59 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Google}{Mountain View, CA}
-      {Software Engineer}{Oct 2016 - Present}
+      {Machine Learning/Intelligent Data Analysis Group, TUB}{Berlin, Germany}
+      {Student Researcher (80 h/month)}{Apr. 2017 - Present}
       \resumeItemListStart
-        \resumeItem{Tensorflow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
-        \resumeItem{Apache Beam}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+        \resumeItem{Brain Computer Interface}
+          {Implementation of EEG data analysis in Matlab with \\
+          	 a focus on supervised source extraction}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Department of Production Systems, Fraunhofer IPK}{Berlin, Germany}
+      {Student Researcher (80 h/month)}{Sep. 2016 - Mar. 2017}      
+      \resumeItemListStart       
+	     \resumeItem{Explorative Data Analysis}
+	       {Visualization of research results using Python}
+	     \resumeItem{Condition Monitoring}
+		   {Feature Selection and Classification of multidimensional \\
+		   	time-series from production systems}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Department of Machine Tools and Factory Management, TUB}{Berlin, Germany}
+      {Student Researcher (80 h/month)}{Nov. 2015 - Aug. 2016}
+      \resumeItemListStart
+        \resumeItem{Real-Time Stream Monitoring Algorithms}
+          {Implementation and evaluation of \\ Pattern Recognition Algorithms in Python}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Coursera}{Mountain View, CA}
-      {Senior Software Engineer}{Jan 2014 - Oct 2016}
-      \resumeItemListStart
-        \resumeItem{Notifications}
-          {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
-        \resumeItem{Nostos}
-          {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
-        \resumeItem{Workflows}
-          {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity.}
-        \resumeItem{Data Collection}
-          {Designed the internal survey and crowd sourcing platform which allowed for creating various tasks for crowd sourcing or embedding surveys across the Coursera platform.}
-        \resumeItem{Dev Environment}
-          {Analytics environment based on docker and AWS, standardized the python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
-        \resumeItem{Data Warehousing}
-          {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
-        \resumeItem{Recommendations}
-          {Core service for all recommendation systems at Coursera, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
-        \resumeItem{Content Discovery}
-          {Improved content discovery by building a new onboarding experience on coursera. Using this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
-        \resumeItem{Course Dashboards}
-          {Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.}
-      \resumeItemListEnd
-
+    {Student organization AIESEC (volunteer work)}{Stuttgart, Germany}
+    {Local Comitee President }{Jul. 2010 - Jan. 2011}
+    
+    %Porsche Vorpraktikum
+    %\resumeSubheading
+    %{Training workshop, Porsche}{Stuttgart, Germany}
+    %{Intern}{Mar. 2010 and Jul. 2010}
+    
     \resumeSubheading
-      {Lucena Research}{Atlanta, GA}
-      {Data Scientist}{Summer 2012 and 2013}
-      \resumeItemListStart
-        \resumeItem{Portfolio Management}
-          {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
-        \resumeItem{QuantDesk}
-          {Python backend for a web application used by hedge fund managers for portfolio management.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Research and Teaching Assistant}{Jan 2012 - Dec 2013}
-      \resumeItemListStart
-        \resumeItem{Research Assistant - Machine Learning}
-          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
-        \resumeItem{Teaching Assistant - Computational Investing}
-          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
-      \resumeItemListEnd
-
+    {Student organization AIESEC (volunteer work)}{Stuttgart, Germany}
+    {Vice President of External Relations}{Nov. 2009 - Jul. 2010}  
   \resumeSubHeadingListEnd
 
 
-%-----------PROJECTS-----------------
-\section{Projects}
+%-----------Skills-----------------
+\section{Skills}
   \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{Github Visualization}
-      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and Movie recommender systems using collaborative filtering on public datasets.}
-    \resumeSubItem{Mac Setup}
-      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+        
+    \resumeSubItem{Language}
+      {German (native), English (fluent), Turkish (basic), Spanish (basic)}      
+    \resumeSubItem{Programming}
+      {Python (advanced), Matlab (intermediate), GAMS (advanced), C\# (basic)}
+       \resumeSubItem{Software}
+       {SPSS (advanced), Microsoft Office (advanced), Siemens NX (intermediate), Autocad (intermediate)}
+       
   \resumeSubHeadingListEnd
 
 %
@@ -176,6 +208,22 @@
 %    }
 %  \resumeSubHeadingListEnd
 
+%closing
+
+%Berlin, 20 September 2017 \includegraphics[width=3.5cm,right]{Unterschrift.png}
+
+\vspace{0.5pt}		
+\begin{figure}[h]
+	\centering	
+	\begin{minipage}{0.49\textwidth}
+		Berlin, 26 Oktober 2017
+				
+	\end{minipage}		
+	\begin{minipage}{0.49\textwidth}
+		\raggedright
+		\includegraphics[width=4.5cm, right]{Unterschrift.png}
+	\end{minipage}	
+\end{figure}
 
 %-------------------------------------------
 \end{document}
