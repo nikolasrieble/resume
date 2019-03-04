@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Sourabh Bajaj
+% Author : Sourabh Bajaj 
 % License : MIT
 %------------------------
 
@@ -16,6 +16,9 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[export]{adjustbox}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -27,10 +30,8 @@
 \addtolength{\oddsidemargin}{-0.2in}
 \addtolength{\evensidemargin}{-0.2in}
 \addtolength{\textwidth}{0.5in}
-%\addtolength{\topmargin}{-0in}
+%\addtolength{\topmargin}{-1.0in}
 \addtolength{\textheight}{1.0in}
-
-\urlstyle{same}
 
 \raggedbottom
 \raggedright
@@ -86,17 +87,17 @@
 			\\			 	
 			 Date of Birth:  & 20.7.1988\\
 			 Place of Birth:  & Freiburg, Germany\\
-			 Nationality:  & German\\
-			 Email : &nikolas-rieble@gmx.de\\%\href{mailto:nikolas-rieble@gmx.de}{nikolas-rieble@gmx.de}\\
-			 Mobile : &+49 1522 612 4617 \\	
+			 %Nationality:  & German\\
+			 Email : &nikolas-rieble@protonmail.com\\
+			 Mobile : &+49 172 1811 209\\	
 		\end{tabular*}
 	
 	\end{minipage}	
 	\begin{minipage}{0.45\textwidth}
 		\centering
-		\includegraphics[width=0.71\linewidth, right]{IMG_0286-Bearbeitet}
+		\includegraphics[width=0.71\linewidth, right]{photo.jpg}
 		\caption*{}
-		\label{fig:prob1_6_1}
+		
 	\end{minipage}	
 \end{figure}
 }
@@ -115,24 +116,22 @@
 \resumeSubHeadingListStart
 \resumeSubheading
 {M.Sc. Computational Engineering Science}{Berlin, Germany}
-{Technical University of Berlin; (current grade 1,7)}{Oct. 2015 -- today}
-\resumeItemListStart
-\resumeItem{Focus of study}
-{Automatization, Machine Learning, Computer Vision}
-\resumeItemListEnd
+{Technical University of Berlin}{Oct. 2015 -- Jun. 2018}
+%\resumeItemListStart
+%\resumeItem{Focus of study}
+%{Automatization, Machine Learning, Computer Vision}
+%\resumeItemListEnd
 \resumeSubheading
 {B.Sc. Psychology}{Vienna, Austria}
-{University of Vienna;  (grade 1,7)}{Oct. 2013 -- Sep. 2015}
+{University of Vienna}{Oct. 2013 -- Sep. 2015}
 \resumeSubheading
 {B.Sc. Mechanical Engineering}{Stuttgart, Germany}
-{Technical University Stuttgart; (grade 2,9)}{Aug. 2009 -- Mar. 2014}
-\resumeItemListStart
-\resumeItem{Bachelor Thesis}
-{Object Recognition with the Kinect camera using C\#}
-\resumeItemListEnd
-%\resumeSubheading
-%   {Abitur}{Hannover, Germany}
-%   {St. Ursula Schule}{Jun. 2008}
+{Technical University Stuttgart}{Aug. 2009 -- Mar. 2014}
+%\resumeItemListStart
+%\resumeItem{Bachelor Thesis}
+%{Object Recognition with the Kinect camera using C\#}
+%\resumeItemListEnd
+
 
 \resumeSubHeadingListEnd
 
@@ -140,38 +139,45 @@
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+  
+   	  \resumeSubheading
+	  {Hilti GmbH Industriegesellschaft für Befestigungstechnik}{Kaufering, Germany}
+	  {Production Technology Expert}{Aug. 2018 - present}
+	 \resumeItemListStart
+	 \resumeItem{Smart Factory architecture}
+	 {Design of a modular system from data acquisition to reporting\\ (Zenon, C\#, SQL, PowerBI)}
+  	 \resumeItem{Project Management}{evaluation and implementation of Industry 4.0 use cases}     
+	 \resumeItemListEnd
 
     \resumeSubheading
       {Machine Learning/Intelligent Data Analysis Group, TUB}{Berlin, Germany}
-      {Student Researcher (80 h/month)}{Apr. 2017 - Present}
+      {Student Researcher (80 h/month)}{Apr. 2017 - Mar. 2018}
       \resumeItemListStart
         \resumeItem{Brain Computer Interface}
-          {Implementation of EEG data analysis in Matlab with \\
-          	 a focus on supervised source extraction}
+          {Implementation of EEG data analysis with a focus on supervised source extraction}
       \resumeItemListEnd
       
     \resumeSubheading
       {Department of Production Systems, Fraunhofer IPK}{Berlin, Germany}
       {Student Researcher (80 h/month)}{Sep. 2016 - Mar. 2017}      
       \resumeItemListStart       
-	     \resumeItem{Explorative Data Analysis}
-	       {Visualization of research results using Python}
+	     %\resumeItem{Explorative Data Analysis}
+	     %  {Visualization of research results using Python}
 	     \resumeItem{Condition Monitoring}
-		   {Feature Selection and Classification of multidimensional \\
-		   	time-series from production systems}
+		   {Classification of multidimensional time-series from production systems}
       \resumeItemListEnd
       
     \resumeSubheading
       {Department of Machine Tools and Factory Management, TUB}{Berlin, Germany}
       {Student Researcher (80 h/month)}{Nov. 2015 - Aug. 2016}
       \resumeItemListStart
-        \resumeItem{Real-Time Stream Monitoring Algorithms}
-          {Implementation and evaluation of \\ Pattern Recognition Algorithms in Python}
+        \resumeItem{Real-Time Stream Monitoring}
+          {Implementation and evaluation of pattern recognition algorithms}
       \resumeItemListEnd
 
-    \resumeSubheading
-    {Student organization AIESEC (volunteer work)}{Stuttgart, Germany}
-    {Local Comitee President }{Jul. 2010 - Jan. 2011}
+    %\resumeSubheading
+    %{Student organization AIESEC (volunteer work)}{Stuttgart, Germany}
+    %{Local Comitee President }{Jul. 2010 - Jan. 2011}
     
     %Porsche Vorpraktikum
     %\resumeSubheading
@@ -180,43 +186,40 @@
     
     \resumeSubheading
     {Student organization AIESEC (volunteer work)}{Stuttgart, Germany}
-    {Vice President of External Relations}{Nov. 2009 - Jul. 2010}  
+    {Member of the Local Comitee board}{Nov. 2009 - Jan. 2011}  
   \resumeSubHeadingListEnd
 
 
-%-----------Skills-----------------
-\section{Skills}
-  \resumeSubHeadingListStart
-        
-    \resumeSubItem{Language}
-      {German (native), English (fluent), Turkish (basic), Spanish (basic)}      
-    \resumeSubItem{Programming}
-      {Python (advanced), Matlab (intermediate), GAMS (advanced), C\# (basic)}
-       \resumeSubItem{Software}
-       {SPSS (advanced), Microsoft Office (advanced), Siemens NX (intermediate), Autocad (intermediate)}
-       
-  \resumeSubHeadingListEnd
+
 
 %
-%--------PROGRAMMING SKILLS------------
-%\section{Programming Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
+%--------PROJECTS------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  	\item{Random Ferns for Object Recognition in polarimetric synthetic aperture radar images (Python)}
+    \item{Processing High-Level Radioactive Waste in the U.S. - A mathematical model (GAMS)}    	
+	\item{Reconstruction of a robots environment using the Kinect Camera (ROS, Python)}
+	\item{3D Object Recognition in a sorting scenario with the Kinect Camera (C\#)}
+\resumeSubHeadingListEnd
+
+%-----------Skills-----------------
+%\section{Language}
+%\resumeSubHeadingListStart
+
+%\resumeSubItem{Language}
+%{German, English, Turkish (inter), Spanish (bas), Python, C\#, SQL, Matlab, GAMS}      
+
+
+%\resumeSubHeadingListEnd      
+
 
 %closing
-
-%Berlin, 20 September 2017 \includegraphics[width=3.5cm,right]{Unterschrift.png}
 
 \vspace{0.5pt}		
 \begin{figure}[h]
 	\centering	
 	\begin{minipage}{0.49\textwidth}
-		Berlin, 26 Oktober 2017
+		Munich, 04.03.2019
 				
 	\end{minipage}		
 	\begin{minipage}{0.49\textwidth}
