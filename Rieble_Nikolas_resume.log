@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.4)  5 MAR 2019 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.3.4)  14 MAR 2019 21:45
 entering extended mode
 **./Rieble_Nikolas_resume.tex
 (Rieble_Nikolas_resume.tex
@@ -396,14 +396,14 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 84.
 (D:\Programme\Miketex\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Underfull \hbox (badness 10000) in alignment at lines 84--92
+Underfull \hbox (badness 10000) in alignment at lines 84--93
 [][]
  []
 
-<photo.jpg, id=15, 289.08pt x 192.72pt>
+<photo.jpg, id=19, 289.08pt x 192.72pt>
 File: photo.jpg Graphic file (type jpg)
 <use photo.jpg>
-Package pdftex.def Info: photo.jpg  used on input line 97.
+Package pdftex.def Info: photo.jpg  used on input line 98.
 (pdftex.def)             Requested size: 161.63228pt x 107.75484pt.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 115.
 
@@ -413,15 +413,15 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 115.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 148.
+(Font)              <7> on input line 123.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 148.
-<Unterschrift.png, id=16, 522.95375pt x 162.6075pt>
+(Font)              <5> on input line 123.
+<Unterschrift.png, id=20, 522.95375pt x 162.6075pt>
 File: Unterschrift.png Graphic file (type png)
 <use Unterschrift.png>
-Package pdftex.def Info: Unterschrift.png  used on input line 224.
+Package pdftex.def Info: Unterschrift.png  used on input line 230.
 (pdftex.def)             Requested size: 128.0374pt x 39.81313pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 229.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
 
 
 Package Fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -433,19 +433,26 @@ This may cause the page layout to be inconsistent, however.
 
 {C:/Users/Spielen und Arbeiten/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.ma
 p} <./photo.jpg> <./Unterschrift.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 229.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
  (Rieble_Nikolas_resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 229.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 229.
-Package rerunfilecheck Info: File `Rieble_Nikolas_resume.out' has not changed.
-(rerunfilecheck)             Checksum: 0D3F4A2801887277BDA95E2D3C6EE342;135.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 229.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 235.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 235.
+
+
+Package rerunfilecheck Warning: File `Rieble_Nikolas_resume.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Rieble_Nikolas_resume.out':
+(rerunfilecheck)             Before: 202520B558126DD168AB35836D882D86;193
+(rerunfilecheck)             After:  B31626E04E64DD71466F673719E944BC;193.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
  ) 
 Here is how much of TeX's memory you used:
- 8848 strings out of 492946
- 133392 string characters out of 3138598
+ 8850 strings out of 492946
+ 133412 string characters out of 3138598
  246713 words of memory out of 3000000
- 12623 multiletter control sequences out of 15000+200000
+ 12624 multiletter control sequences out of 15000+200000
  8232 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,11n,77p,249b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -454,9 +461,9 @@ Here is how much of TeX's memory you used:
 type1/public/amsfonts/cm/cmcsc10.pfb><D:/Programme/Miketex/fonts/type1/public/a
 msfonts/cm/cmr10.pfb><D:/Programme/Miketex/fonts/type1/public/amsfonts/cm/cmsy1
 0.pfb>
-Output written on Rieble_Nikolas_resume.pdf (1 page, 498124 bytes).
+Output written on Rieble_Nikolas_resume.pdf (1 page, 498932 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 35 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 54 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
