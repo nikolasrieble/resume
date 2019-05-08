@@ -19,6 +19,11 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage[export]{adjustbox}
+\usepackage{titlesec}
+
+\titlelabel{$\circ$ } % clear the #.# for the subsection header 
+\newcommand\filledcirc{{\color{black}\bullet}\mathllap{\circ}}
+
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -30,7 +35,7 @@
 \addtolength{\oddsidemargin}{-0.2in}
 \addtolength{\evensidemargin}{-0.2in}
 \addtolength{\textwidth}{0.5in}
-%\addtolength{\topmargin}{-1.0in}
+\addtolength{\topmargin}{-40pt}
 \addtolength{\textheight}{1.0in}
 
 \raggedbottom
@@ -41,23 +46,35 @@
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+\newcommand{\resumeSubItem}[2]{
   \item\small{
     {#1}{:#2 \vspace{-2pt}}
   }
 }
 
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\resumeSubheadingg}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\ 
       {\small#3} & {\small #4} \\
     \end{tabular*}\vspace{-5pt}}
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\%
+	\end{tabular*}}
+
+\newcommand{\resumeItem}[3]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\ 
+		#3& \vspace{-5pt}
+	\end{tabular*}}
+
+
 
 \renewcommand{\labelitemii}{$\circ$}
 
@@ -68,123 +85,65 @@
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
-
 \addtolength{\tabcolsep}{4pt}    %spacing between columns
-
 {\renewcommand{\arraystretch}{1} %spacing between rows
-
-\begin{figure}[h]
+\begin{figure}[t]
 	\centering	
-	\begin{minipage}{0.54\textwidth}
-
-		
+	\begin{minipage}{0.54\textwidth}	
 		\begin{tabular*}{\textwidth}{ll}			
 			\multicolumn{2}{l}{\textbf{{\Huge Nikolas Rieble}}}	\\	
-			\\			 	
-			 Date of Birth:  & 20.7.1988\\
-			 Place of Birth:  & Freiburg, Germany\\
-			 %Nationality:  & German\\
-			 Email : &nikolas-rieble@protonmail.com\\
-			 Mobile: &+49 172 1811 209\\	
-			 %Linkedin: &https://www.linkedin.com/in/nikolasrieble/
-		\end{tabular*}
-	
+			\multicolumn{2}{l}{Data Scientist}	\\\\ 	
+			 a: &Lützowstraße 20, 81245 Munich\\
+			 e: &nikolas-rieble@protonmail.com\\
+			 t: &+49 172 1811 209\\	
+			 g: &github.com/nikolasrieble		
+		 \end{tabular*}	
 	\end{minipage}	
 	\begin{minipage}{0.45\textwidth}
 		\centering
 		\includegraphics[width=0.71\linewidth, right]{photo.jpg}
-		\caption*{}
-		
-	\end{minipage}	
+	\end{minipage}
 \end{figure}
 }
 
-\vspace{-10mm}
-%----------HEADING-----------------
-%\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%  \textbf{{\Large Nikolas Rieble}} & email : \href{mailto:nikolas-rieble@gmx.de}{nikolas-rieble@gmx.de}\\
-%   & mobile : +49-1522-612-4617 \\
-%\end{tabular*}
-
-
+\section{Profile}
+Engineer with 4 years of experience in applied data science. Implemented machine learning algorithms in Python for computer vision and time series analysis.   Skilled at communication and training in statistics and mathematics. Persuasive and commited to empowering colleagues and customers with human-centered digitalization.
 %-----------EXPERIENCE-----------------
 \section{Work Experience}
   \resumeSubHeadingListStart
-  
-   	  \resumeSubheading
-	  {Hilti GmbH Industriegesellschaft für Befestigungstechnik}{Kaufering, Germany}
-	  {Production Technology Expert}{Aug. 2018 - present}
+   	  \resumeItem{Smart Factory Developer}{since 2018}{Hilti GmbH Industriegesellschaft für Befestigungstechnik}
 	 \resumeItemListStart
-	 \resumeItem{Smart Factory architecture}
-	 { Design of a modular system from data acquisition to reporting\\ (Zenon, C\#, SQL, PowerBI)}
-  	 \resumeItem{Project Management}{ evaluation and implementation of Industry 4.0 use cases}     
-	 \resumeItemListEnd
-
-    \resumeSubheading
-      {Machine Learning/Intelligent Data Analysis Group, TUB}{Berlin, Germany}
-      {Student Researcher (80 h/month)}{Apr. 2017 - Mar. 2018}
-      \resumeItemListStart
-        \resumeItem{Brain Computer Interface}
-          { Implementation of EEG data analysis with a focus on supervised source extraction}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {Department of Production Systems, Fraunhofer IPK}{Berlin, Germany}
-      {Student Researcher (80 h/month)}{Sep. 2016 - Mar. 2017}      
-      \resumeItemListStart       
-	     %\resumeItem{Explorative Data Analysis}
-	     %  {Visualization of research results using Python}
-	     \resumeItem{Condition Monitoring}
+	 \resumeSubItem{Smart Factory architecture}
+	 { Design of a modular system from data acquisition to reporting\\}
+  	 \resumeSubItem{Project Management}{ evaluation and implementation of Industry 4.0 use cases}     
+	 \resumeItemListEnd   
+    \resumeItem{Student Researcher}{2017 - 2018}{Machine Learning/Intelligent Data Analysis Group, TUB}
+    \resumeItemListStart
+      \resumeSubItem{Brain Computer Interface}
+      { Implementation of EEG data analysis in Matlab}
+      \resumeItemListEnd      
+    \resumeItem{Student Researcher}{2016 - 2017}{Department of Production Systems, Fraunhofer IPK}      
+      \resumeItemListStart  
+	     \resumeSubItem{Condition Monitoring}
 		   { Classification of multidimensional time-series from production systems}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {Department of Machine Tools and Factory Management, TUB}{Berlin, Germany}
-      {Student Researcher (80 h/month)}{Nov. 2015 - Aug. 2016}
+      \resumeItemListEnd      
+    \resumeItem{Student Researcher}{2015 - 2016}{Department of Machine Tools and Factory Management, TUB}
       \resumeItemListStart
-        \resumeItem{Real-Time Stream Monitoring}
+        \resumeSubItem{Real-Time Stream Monitoring}
           { Implementation and evaluation of pattern recognition algorithms}
       \resumeItemListEnd
-
-    %\resumeSubheading
-    %{Student organization AIESEC (volunteer work)}{Stuttgart, Germany}
-    %{Local Comitee President }{Jul. 2010 - Jan. 2011}
-    
-    %Porsche Vorpraktikum
-    %\resumeSubheading
-    %{Training workshop, Porsche}{Stuttgart, Germany}
-    %{Intern}{Mar. 2010 and Jul. 2010}
-    
-    %\resumeSubheading
-    %{Student organization AIESEC (volunteer work)}{Stuttgart, Germany}
-    %{Member of the Local Comitee board}{Nov. 2009 - Jan. 2011}  
-  \resumeSubHeadingListEnd
-  
+ \resumeSubHeadingListEnd
  %-----------EDUCATION-----------------
  \section{Education}
  \resumeSubHeadingListStart
- \resumeSubheading
- {M.Sc. Computational Engineering Science}{Berlin, Germany}
- {Technical University of Berlin}{Oct. 2015 -- Jun. 2018}
- %\resumeItemListStart
- %\resumeItem{Focus of study}
- %{Automatization, Machine Learning, Computer Vision}
- %\resumeItemListEnd
- \resumeSubheading
- {B.Sc. Psychology}{Vienna, Austria}
- {University of Vienna}{Oct. 2013 -- Sep. 2015}
- \resumeSubheading
- {B.Sc. Mechanical Engineering}{Stuttgart, Germany}
- {Technical University Stuttgart}{Aug. 2009 -- Mar. 2014}
- %\resumeItemListStart
- %\resumeItem{Bachelor Thesis}
- %{Object Recognition with the Kinect camera using C\#}
- %\resumeItemListEnd
+ \resumeItem
+ {M.Sc. Computational Engineering Science}{2015 -- 2018}{Technical University of Berlin}
+ \resumeItem
+ {B.Sc. Psychology}{2013 -- 2015} {University of Vienna}
+ \resumeItem
+ {B.Sc. Mechanical Engineering}{2009 -- 2014}{Technical University Stuttgart}
  \resumeSubHeadingListEnd
-
 %--------PROJECTS------------
 \section{Projects}
   \resumeSubHeadingListStart
@@ -195,41 +154,14 @@
 	\item{\textbf{Robotics}: Reconstruction of a robots environment using the Kinect Camera (ROS, Python)}
 	\vspace{-0.1in}
 \resumeSubHeadingListEnd
-
 %--------Computer Literacy-------
 \section{Computer Literacy}
 \resumeSubHeadingListStart
-\item{\textbf{Programming}: Python (including: numpy, pandas, scipy, sklearn), C\#, Matlab, SQL}
+\item{\textbf{Programming}: Python (including: numpy, pandas, scipy, sklearn), C\#, Matlab, SQL, GAMS}
 \vspace{-0.1in}
-\item{\textbf{Dev Tools}: Git, Bamboo}   
+\item{\textbf{Dev Tools}: Git, Bamboo, Jira}   
+\vspace{-0.1in}
+\item{\textbf{Frameworks}: ROS, Apache Spark}   
 \vspace{-0.1in}
 \resumeSubHeadingListEnd
-
-%-----------Skills-----------------
-%\section{Language}
-%\resumeSubHeadingListStart
-
-%\resumeSubItem{Language}
-%{German, English, Turkish (inter), Spanish (bas), Python, C\#, SQL, Matlab, GAMS}      
-
-
-%\resumeSubHeadingListEnd      
-
-
-%closing
-
-\vspace{0.5pt}		
-\begin{figure}[h]
-	\centering	
-	\begin{minipage}{0.49\textwidth}
-		Munich, 04.03.2019
-				
-	\end{minipage}		
-	\begin{minipage}{0.49\textwidth}
-		\raggedright
-		\includegraphics[width=4.5cm, right]{Unterschrift.png}
-	\end{minipage}	
-\end{figure}
-
-%-------------------------------------------
 \end{document}
