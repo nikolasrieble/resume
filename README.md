@@ -4,4 +4,4 @@ Current cv based on the template resume of Sourabh Bajaj.
 ![Resume Screenshot](/resume_preview.png)
 
 ### License
-Format is MIT but all the data is owned by Sourabh Bajaj.
+Format is MIT but all the data is owned by Nikolas Rieble.
