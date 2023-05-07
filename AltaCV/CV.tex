@@ -112,30 +112,34 @@
 % \AtBeginEnvironment{itemize}{\small}
 
 %% Set the left/right column width ratio to 6:4.
-\columnratio{0.6}
+\columnratio{0.7}
 
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
 \begin{paracol}{2}
 \cvsection{Experience}
 
-\cvevent{Software Engineer}{Tulip Interfaces}{July 2021 -- Ongoing}{Munich}
+\cvevent{Software Engineer}{Tulip Interfaces}{July 2021 - Ongoing}{Munich}
 \begin{itemize}
-\item Shipped the replacement of a charting library
+\item Shipped the replacement of a charting library, reducing bundle size by 40\%
+\item Built caching OPC UA server data to enable users to search nodes
+\item Adapt the kubernetes dev env to run on the Apple silicone chip
+
+\item Contributed to 21 RFCs across teams
+\item Architected the integration of machine learning features into the platform
+\item Introduced code ownership to the engineering organisation (adopted by all teams)
+\item Lead the refactoring of a deserted code base to a maintainable state
+
 \item Awarded Captain of Tulip Q3 2022
-\item Lead the refactoring of a deserted code base
-\item Championed code ownership in the engineering organisation
-\item Built caching OPC UA server data to enable users to search
-\item Implemented frontend iteration based on TypeScript and React
-\item Adapt the kubernetes development environment to run on the Apple silicone chip
-  \end{itemize}
+\item Onboarded 4 engineers, Mentor to 3 junior engineers
+\end{itemize}
 
 \divider
 
-\cvevent{Data Engineer}{Scalable Capital}{Oct. 2019 -- Jun. 2021}{Munich}
+\cvevent{Data Engineer}{Scalable Capital}{Oct. 2019 - Jun. 2021}{Munich}
 \begin{itemize}
-\item Implemented ETL pipelines feeding a Data Warehouse
-\item Lead adoption of metabase as a self-service BI tool
+\item Implemented ETL pipelines feeding a Data Warehouse from microservices using AWS SQS and AWS SNS
+\item Lead adoption of metabase as a self-service BI tool with 100+ users unlocking data driven decision making with monthly workshops
 \item Founding member of the clean code guild
 \item Conduct >50 engineering interviews and review test assignment
 \end{itemize}
@@ -144,17 +148,27 @@
 
 \cvevent{Fullstack IoT Developer}{Hilti GmbH Industriegesellschaft für Befestigungstechnik}{Aug. 2018 - Sep. 2019}{Kaufering}
 \begin{itemize}
-\item Designed and implemented a Data Warehouse to offer a single source of truth across departments.
-\item Championed good engineering practices on version control and collaboration
+\item Designed and implemented a Data Warehouse to offer a single source of truth across multiple factories including chemical and mechanical production lines
+\item Digitised 5 production lines, enabling real-time monitoring and analysis of production data
+\item Introduced software engineering best practice (git, testing, code reviews)
 \end{itemize}
 
-\cvsection{Projects}
+\cvsection{Open Source}
+
+\cvevent{Recharts}{}{}{}
 
 \begin{itemize}
-  \item \textit{Open Source Development} Contributor to Recharts, a react charting library
-  \item \textit{Android App: Einbürgerung Deutschland}
-  An Android App to prepare for the German Citizenship Test.
-  Published in the \href{https://play.google.com/store/apps/details?id=com.nrieble.quizapp}{Play Store}.
+  \item Authored 45 PRs, migrating existing documentation to Storybook
+  \item Introduced storybook test runner to unlock visual regression testing
+\end{itemize}
+
+\medskip
+
+\cvevent{Android App: Einbürgerung Deutschland}{}{}{}
+
+\begin{itemize}
+  \item Implemented an Android App to prepare for the German Citizenship Test
+  \item Published in the \href{https://play.google.com/store/apps/details?id=com.nrieble.quizapp}{Play Store}.
 \end{itemize}
 
 
@@ -165,20 +179,20 @@
 
 \medskip
 
-\cvsection{A Day of My Life}
+% \cvsection{A Day of My Life}
 
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-\wheelchart{1.5cm}{0.5cm}{%
-  1/8em/accent!60/Read,
-  2/8em/accent!60/Structure and refine work,
-  2/8em/accent!60/Mentor junior \\ engineers,
-  4/8em/accent!60/Code,
-  1/10em/accent/Sport,
-  4/6em/accent!20/Spend time with family,
-  1/6em/accent!20/Board games
-}
+% % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% % \wheelchart{outer radius}{inner radius}{
+% % comma-separated list of value/text width/color/detail}
+% \wheelchart{1.5cm}{0.5cm}{%
+%   1/8em/accent!60/Read,
+%   2/8em/accent!60/Structure and refine work,
+%   2/8em/accent!60/Mentor junior \\ engineers,
+%   4/8em/accent!60/Code,
+%   1/10em/accent/Sport,
+%   4/6em/accent!20/Spend time with family,
+%   1/6em/accent!20/Board games
+% }
 
 % use ONLY \newpage if you want to force a page break for
 % ONLY the current column
@@ -188,11 +202,11 @@
 %% page if the content is too long.
 \switchcolumn
 
-\cvsection{Life Philosophy}
+% \cvsection{Life Philosophy}
 
-\begin{quote}
-''Try empathy first''
-\end{quote}
+% \begin{quote}
+% ''Try empathy first''
+% \end{quote}
 
 \cvsection{Most Proud of}
 
@@ -208,30 +222,33 @@
 
 \cvsection{Strengths}
 
-\cvtag{Candid}
-\cvtag{Attentive}
-\cvtag{Customer focus}
-\cvtag{Curious}
-
-\divider\smallskip
-
 \cvtag{Python}
 \cvtag{Kotlin}
 \cvtag{Typescript}
+
+\cvtag{Javascript}
+
 \cvtag{React}
 \cvtag{Redux}
+\cvtag{Node}
+
+\cvtag{Docker}
+
 \cvtag{Mongo}
 \cvtag{SQL}
+
 \cvtag{AWS}
+\cvtag{Terraform}
+
 \cvtag{TDD}
 \cvtag{DDD}
 
-\cvsection{Languages}
+% \cvsection{Languages}
 
-\cvskill{English}{5}
-\cvskill{German}{5}
-\cvskill{Turkish}{3.5}
-\cvskill{Spanish}{2} %% Supports X.5 values.
+% \cvskill{English}{5}
+% \cvskill{German}{5}
+% \cvskill{Turkish}{3.5}
+% \cvskill{Spanish}{2} %% Supports X.5 values.
 
 %% Yeah I didn't spend too much time making all the
 %% spacing consistent... sorry. Use \smallskip, \medskip,
@@ -240,15 +257,15 @@
 
 \cvsection{Education}
 
-\cvevent{M.Sc.\ Computational Engineering Science}{Technical University Berlin}{2015 - 2018}{Berlin, Germany}
+\cvevent{M.Sc.\ Computational Engineering Science}{Technical University Berlin}{2015 - 2018}{}
 
-\divider
+% \divider
 
-\cvevent{B.Sc.\ Psychology}{University of Vienna}{2013 - 2015}{Vienna, Austria}
+\cvevent{B.Sc.\ Psychology}{University of Vienna}{2013 - 2015}{}
 
-\divider
+% \divider
 
-\cvevent{B.Sc.\ Mechanical Engineering}{Technical University Stuttgart}{2009 - 2014}{Stuttgart, Germany}
+\cvevent{B.Sc.\ Mechanical Engineering}{Technical University Stuttgart}{2009 - 2014}{}
 
 % \divider
 
