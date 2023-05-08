@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1683455975 "/Users/nikolasrieble/code/resume/AltaCV/CV.tex" "CV.pdf" "CV" 1683455976
+["pdflatex"] 1683465094 "/Users/nikolasrieble/code/resume/AltaCV/CV.tex" "CV.pdf" "CV" 1683465095
   "../SmallPhoto.jpg" 1651777936 94616 529bde67a8ab0c7d2b90a146ad50ec8c ""
-  "/Users/nikolasrieble/code/resume/AltaCV/CV.tex" 1683455975 8658 bce0eb4a8b333e6737b205796d71b92c ""
+  "/Users/nikolasrieble/code/resume/AltaCV/CV.tex" 1683465094 8824 527f3cb7000b38d2e86118eda7d89643 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1622837620 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc" 1622837620 3083 a707712f77b073b3833e4b1334a30e99 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
@@ -224,11 +224,11 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1651781233 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1651781260 2827942 6a511a1d459554258fd4af2b4e6197c2 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "CV.aux" 1683455976 686 e6bf9f11827e1eae1d85e75b99e0a183 "pdflatex"
+  "CV.aux" 1683465095 686 e6bf9f11827e1eae1d85e75b99e0a183 "pdflatex"
   "CV.out" 0 -1 0 "pdflatex"
-  "CV.tex" 1683455975 8658 bce0eb4a8b333e6737b205796d71b92c ""
+  "CV.tex" 1683465094 8824 527f3cb7000b38d2e86118eda7d89643 ""
   "altacv.cls" 1651777936 13469 d2ac090e91c6372756fc8c23db226d72 ""
-  "pdfa.xmpi" 1683455976 5042 2d8d2a5b472c3bcc829b0cb5366684d7 "pdflatex"
+  "pdfa.xmpi" 1683465094 5042 d7783f261f65ca0e5f649a24e0b22573 "pdflatex"
   (generated)
   "CV.aux"
   "CV.log"

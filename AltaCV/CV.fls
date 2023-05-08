@@ -1398,6 +1398,7 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome5/ufontawesomefree
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome5/ufontawesomefree3.fd
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fontawesome5/fa5free3solid.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fontawesome5/fa5free0solid.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fontawesome5/fa5free0solid.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/typoland/lato/Lato-Bold-T1-TLF.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/typoland/lato/Lato-Bold-T1-TLF--base.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/typoland/lato/Lato-Bold-T1-TLF.vf
