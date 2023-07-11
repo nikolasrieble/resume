@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.5)  7 MAY 2023 15:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.5)  11 JUL 2023 21:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -751,11 +751,6 @@ LaTeX Font Info:    External font `cmex7' loaded for size
 <<omx.cmap>>
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <5> on input line 109.
-<../SmallPhoto.jpg, id=17, 699.61375pt x 635.37375pt>
-File: ../SmallPhoto.jpg Graphic file (type jpg)
-<use ../SmallPhoto.jpg>
-Package pdftex.def Info: ../SmallPhoto.jpg  used on input line 109.
-(pdftex.def)             Requested size: 699.61205pt x 635.3722pt.
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 121.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
@@ -767,43 +762,43 @@ File: TS1lato-TLF.fd 2019/06/24 Font definitions for TS1/lato-TLF.
 LaTeX Font Info:    Font shape `TS1/lato-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 124.
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--161
+Underfull \hbox (badness 10000) in paragraph at lines 148--155
  
  []
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
-Overfull \hbox (1.59999pt too wide) in paragraph at lines 234--234
+Overfull \hbox (1.59999pt too wide) in paragraph at lines 229--229
 []|[]| 
  []
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome5/ufontawesomefree3.fd)
-Overfull \hbox (1.59999pt too wide) in paragraph at lines 238--238
+Overfull \hbox (1.59999pt too wide) in paragraph at lines 233--233
 []|[]| 
  []
 
 
-Overfull \hbox (1.59999pt too wide) in paragraph at lines 242--242
+Overfull \hbox (1.59999pt too wide) in paragraph at lines 237--237
 []|[]| 
  []
 
 [1
 
- <../SmallPhoto.jpg>] (./CV.aux)
+] (./CV.aux)
 Package rerunfilecheck Info: File `CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 32875 strings out of 478305
- 648200 string characters out of 5845249
- 945703 words of memory out of 5000000
- 50456 multiletter control sequences out of 15000+600000
+ 32830 strings out of 478305
+ 647064 string characters out of 5845249
+ 944611 words of memory out of 5000000
+ 50414 multiletter control sequences out of 15000+600000
  694948 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  125i,10n,120p,564b,2377s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lato/a_rt66h3.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lato/a_cl4kdn.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/typoland/lato/Lato-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.pfb>
-Output written on CV.pdf (1 page, 226647 bytes).
+Output written on CV.pdf (1 page, 132007 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
+ 65 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
- 50 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 

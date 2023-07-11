@@ -1372,11 +1372,6 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/mmap/omx.cmap
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/mmap/omx.cmap
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/mmap/omx.cmap
-INPUT ../SmallPhoto.jpg
-INPUT ../SmallPhoto.jpg
-INPUT ../SmallPhoto.jpg
-INPUT ../SmallPhoto.jpg
-INPUT ../SmallPhoto.jpg
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/typoland/lato/Lato-Bold-T1-TLF.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/typoland/lato/Lato-Regular-T1-TLF.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fontawesome5/fa5free0solid.tfm
