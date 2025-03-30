@@ -66,21 +66,24 @@
 {\renewcommand{\arraystretch}{1} %spacing between rows
 \begin{figure}[t]
 	\centering
-	\begin{minipage}{0.54\textwidth}
-		\begin{tabular*}{\textwidth}{ll}
-			\multicolumn{2}{l}{\textbf{{\Huge Nikolas Rieble}}}	\\
-			\multicolumn{2}{l}{Software Engineer}	\\\\
-			 a: &Ungererstr. 161, 80805 Munich\\
-			 e: &nikolas-rieble@protonmail.com\\
-			 p: &+49 172 1811 209\\
-			 g: &github.com/nikolasrieble
-		 \end{tabular*}
-	\end{minipage}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} ll}
+		\multicolumn{2}{l}{\textbf{{\Huge Nikolas Rieble}}}	\\
+		\multicolumn{2}{l}{Software Engineer}	\\\\
+		\begin{tabular}{ll}
+			a: &Ungererstr. 161, 80805 Munich\\
+			e: &nikolas-rieble@protonmail.com\\
+			p: &+49 172 1811 209\\
+			g: &github.com/nikolasrieble
+		\end{tabular} &
+		\begin{minipage}{0.6\textwidth}
+			\section*{Profile}
+			Experienced problem solver with a focus on value creation. I have a strong background in software engineering, data engineering and machine learning. I am passionate about building high-quality software and leading teams to success. I am a core maintainer of the recharts library and have experience in refactoring legacy code bases.
+		\end{minipage}
+	\end{tabular*}
 \end{figure}
 }
 
-\section{Profile}
-Experienced problem solver with a focus on value creation. I have a strong background in software engineering, data engineering and machine learning. I am passionate about building high-quality software and leading teams to success. I am a core maintainer of the recharts library and have experience in refactoring legacy code bases.
+
 %-----------EXPERIENCE-----------------
 \section{Work Experience}
 
