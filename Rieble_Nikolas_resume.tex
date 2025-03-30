@@ -31,12 +31,12 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.2in}
-\addtolength{\evensidemargin}{-0.2in}
-\addtolength{\textwidth}{0.5in}
-\addtolength{\topmargin}{-40pt}
-\addtolength{\textheight}{1.0in}
+% Adjust margins for compact layout
+\addtolength{\oddsidemargin}{-0.3in}
+\addtolength{\evensidemargin}{-0.3in}
+\addtolength{\textwidth}{0.6in}
+\addtolength{\topmargin}{-50pt}
+\addtolength{\textheight}{1.2in}
 
 \raggedbottom
 \raggedright
@@ -44,12 +44,20 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Adjust spacing for lists
+\setlist[itemize]{itemsep=2pt, topsep=4pt}
+
+% Adjust spacing between roles and projects
+\newcommand{\roleSpacing}{\vspace{4pt}}
+\newcommand{\projectSpacing}{\vspace{2pt}}
+
 %-------------------------
 % Custom commands
-\newcommand{\role}[2]{\item{\textbf{#1} \hfill #2 \\}} % job description
-\newcommand{\station}[2]{#1  \hfill #2 \\} % employer/department
+\newcommand{\role}[2]{\item{#1 \hfill #2 \\}} % job description
+\newcommand{\station}[2]{\textbf{#1}  \hfill #2 \\} % employer/department
 \newcommand{\project}[2]{\item\small{#1: #2}} % activity/ achievement
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
@@ -67,56 +75,82 @@
 \begin{figure}[t]
 	\centering
 	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} ll}
-		\multicolumn{2}{l}{\textbf{{\Huge Nikolas Rieble}}}	\\
-		\multicolumn{2}{l}{Software Engineer}	\\\\
+		 \textbf{{\Huge Nikolas Rieble}} & 
 		\begin{tabular}{@{}ll@{}}
 			\textbf{Address:} & Ungererstr. 161, 80805 Munich \\
 			\textbf{Email:} & \href{mailto:nikolas-rieble@protonmail.com}{nikolas-rieble@protonmail.com} \\
 			\textbf{Phone:} & +49 172 1811 209 \\
 			\textbf{GitHub:} & \href{https://github.com/nikolasrieble}{github.com/nikolasrieble} \\
-		\end{tabular} &
-		\begin{minipage}{0.6\textwidth}
-			\section*{Profile}
-			Experienced software engineer with expertise in building scalable systems, refactoring legacy code, and leading teams. Passionate about delivering value through high-quality software and innovative solutions.
-		\end{minipage}
+		\end{tabular} \\
+		\textbf{Software Engineer} & \\
 	\end{tabular*}
 \end{figure}
 }
 
+%-----------PROFILE-----------------
+\section{Profile}
+Experienced software engineer with expertise in building scalable systems, refactoring legacy code, and leading teams. Excited to ship product, navigate the tradeoffs between value and effort, and build an organization to deliver.
+
 %-----------EXPERIENCE-----------------
 \section{Work Experience}
 
+\station{HashiCorp}{since Feb. 2024}
 \resumeSubHeadingListStart
-
-\role{Senior Software Engineer II}{HashiCorp, since Feb. 2024}
+\role{Senior Software Engineer II}{Terraform Enterprise}
 \projectliststart
-\project{High availability features}{Enhanced Terraform Enterprise with PostgreSQL cluster support and failover.}
+\project{High availability features}{Enhanced PostgreSQL cluster support with failover.}
+\project{On-call}{Participated in 24/7 on-call rotation.}
 \projectlistend
+\resumeSubHeadingListEnd
 
-\role{Engineering Manager}{Tulip Interfaces, Oct. 2023 - Jan. 2024}
+\roleSpacing
+
+\station{Tulip Interfaces}{Jul. 2021 - Jan. 2024}
+\resumeSubHeadingListStart
+\role{Engineering Manager}{Analytics}
 \projectliststart
 \project{Team leadership}{Managed a team of 4 engineers to deliver a query and reporting product.}
-\project{Codebase refactoring}{Migrated a legacy JavaScript codebase to TypeScript, improving maintainability.}
+\project{Codebase refactoring}{Migrated a legacy JavaScript codebase to TypeScript.}
 \projectlistend
-
-\role{Software Engineer III}{Tulip Interfaces, Jul. 2021 - Sep. 2023}
+\roleSpacing
+\role{Software Engineer III}{Analytics}
 \projectliststart
 \project{Machine learning integration}{Architected features for forecasting and anomaly detection.}
 \project{Charting library migration}{Replaced Plotly with Recharts, reducing bundle size by 40\%.}
 \projectlistend
+\resumeSubHeadingListEnd
 
-\role{Data Engineer}{Scalable Capital, Oct. 2019 - Jun. 2021}
+\roleSpacing
+
+\station{Scalable Capital}{Oct. 2019 - Jun. 2021}
+\resumeSubHeadingListStart
+\role{Data Engineer}{BI}
 \projectliststart
 \project{ETL pipelines}{Developed Airflow jobs for data extraction and OLAP queries.}
 \project{BI tools}{Maintained Metabase and trained colleagues in self-service analytics.}
 \projectlistend
+\resumeSubHeadingListEnd
 
-\role{Fullstack IoT Developer}{Hilti GmbH, Aug. 2018 - Sep. 2019}
+\roleSpacing
+
+\station{Hilti GmbH}{Aug. 2018 - Sep. 2019}
+\resumeSubHeadingListStart
+\role{Fullstack IoT Developer}{Digital Factory}
 \projectliststart
 \project{Data warehousing}{Built a data warehouse to unify and clean data from multiple sources.}
-\project{Reporting tools}{Created PowerBI dashboards and trained users for self-service reporting.}
+\project{Reporting tools}{Created PowerBI dashboards and trained users.}
 \projectlistend
+\resumeSubHeadingListEnd
 
+%-----------OPEN SOURCE CONTRIBUTIONS-----------------
+\section{Open Source Contributions}
+
+\resumeSubHeadingListStart
+\role{Recharts}{}
+\projectliststart
+\project{Core Maintainer}{Improved performance, reduced bundle size by 40\%, and engaged with the community.}
+\project{Tooling Enhancements}{Introduced Storybook and migrated unit tests to Vitest.}
+\projectlistend
 \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
